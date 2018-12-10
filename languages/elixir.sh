@@ -18,7 +18,7 @@ CACHED_DOWNLOAD="${HOME}/cache/elixir-v${ELIXIR_VERSION}.zip"
 # would cause an infrastructure error message on Codeship.
 mkdir -p "${ELIXIR_PATH}"
 
-wget --continue --output-document "${CACHED_DOWNLOAD}" "https://repo.hex.pm/builds/elixir/v${ELIXIR_VERSION}.zip"
+wget --output-document "${CACHED_DOWNLOAD}" "https://repo.hex.pm/builds/elixir/v${ELIXIR_VERSION}.zip"
 unzip -q -o "${CACHED_DOWNLOAD}" -d "${ELIXIR_PATH}"
 
 export PATH="${ELIXIR_PATH}/bin:${PATH}"
