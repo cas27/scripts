@@ -24,4 +24,4 @@ unzip -q -o "${CACHED_DOWNLOAD}" -d "${ELIXIR_PATH}"
 export PATH="${ELIXIR_PATH}/bin:${PATH}"
 
 # check the correct version is used
-elixir --version | grep "${ELIXIR_VERSION}"
+# elixir --version | grep "${ELIXIR_VERSION}"
